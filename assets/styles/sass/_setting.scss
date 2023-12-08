@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+$color-carrot:#FF9900;
+$color-eerieBlack:#1F1F1F;
+$color-whiteSmoke:#F5F5F5;
+$color-white:#FFFFFF;
+$color-black:#000000;
+
+@font-face {
+    font-family: allure;
+    src: url(/assets/font/Allura-Regular.ttf);
+@font-face {
+        font-family: poppins;
+        src: url(/assets/font/Poppins-Medium.ttf);
+    }
+@font-face {
+    font-family: roboto;
+    src: url(/assets/font/Roboto-Light.ttf);
+}
+@mixin center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == "phone" {
+        @media (max-width: 600px) { @content; }
+    } @else if $breakpoint == "tablet" {
+        @media (max-width: 900px) { @content; }
+    } @else if $breakpoint == "desktop" {
+        @media (min-width: 901px) { @content; }
+    }
+}
+}
+body{
+    font-family:poppins;
+}

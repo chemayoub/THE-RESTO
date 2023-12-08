@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link rel="stylesheet" href="./assets/styles/sass/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -150,17 +150,17 @@
               <p>$14</p>
             </div>
             <div class="daily-special">
-                <div class="dish-img">
-                  <img src="/assets/img/dish-item-07.jpg" alt="" />
-                </div>
-                <div class="dish-title">
-                  <h4>imported salmon steak</h4>
-                  <p>salmon/ veggies / oli</p>
-                </div>
-                <div class="flat-price">
-                  <p>$16</p>
-                </div>
+              <div class="dish-img">
+                <img src="/assets/img/dish-item-07.jpg" alt="" />
               </div>
+              <div class="dish-title">
+                <h4>imported salmon steak</h4>
+                <p>salmon/ veggies / oli</p>
+              </div>
+              <div class="flat-price">
+                <p>$16</p>
+              </div>
+            </div>
           </div>
           <div class="daily-special">
             <div class="dish-img">
@@ -168,7 +168,7 @@
             </div>
             <div class="dish-title">
               <h4>baked potato pizza</h4>
-              <p> potato / bread / cheese</p>
+              <p>potato / bread / cheese</p>
             </div>
             <div class="flat-price">
               <p>$25</p>
@@ -183,7 +183,7 @@
             <div class="open">
               <h3>time</h3>
               <h4>open</h4>
-              <img src="/assets/img/ic-plate.png" alt="">
+              <img src="/assets/img/ic-plate.png" alt="" />
               <div class="day">
                 <h3>monday-friday</h3>
                 <p>7AM - 11AM (brekfast)</p>
@@ -195,6 +195,36 @@
                 <p>11AM - 10PM (lunch/dinner)</p>
               </div>
               <p>+15 890 979 25 52</p>
+            </div>
+            <div class="booking-open">
+              <div class="booking-title">
+                <h3>reservation</h3>
+                <h4>online booking</h4>
+                <img src="/assets/img/ic-plate.png" alt="" />
+                <form action="#">
+                  <div class="number">
+                    <label for="number">People</label>
+                    <input type="number" name="number" id="number" />
+                  </div>
+                  <div class="date">
+                    <input type="date" name="date" id="date" />
+                  </div>
+                  <div class="time">
+                    <input type="time" name="time" id="time" />
+                  </div>
+                  <div class="name">
+                    <label for="name">name</label>
+                    <input type="text" name="name" id="name" />
+                  </div>
+                  <div class="phone">
+                    <input type="text" name="phone" id="phone" />
+                  </div>
+                  <div class="email">
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="email" />
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -209,7 +239,10 @@
               </div>
               <div class="event-right">
                 <h3>Night Inspirescu Party</h3>
-                <p><i class="fa-solid fa-location-dot"></i> restaurant resto <i class="fa-regular fa-clock"></i> 10:00pm - 6:00am  </p>
+                <p>
+                  <i class="fa-solid fa-location-dot"></i> restaurant resto
+                  <i class="fa-regular fa-clock"></i> 10:00pm - 6:00am
+                </p>
                 <p>buy tickets</p>
               </div>
             </div>
@@ -222,7 +255,10 @@
               </div>
               <div class="event-right">
                 <h3>DJ kobagRunme</h3>
-                <p><i class="fa-solid fa-location-dot"></i> restaurant resto <i class="fa-regular fa-clock"></i> 10:00pm - 6:00am  </p>
+                <p>
+                  <i class="fa-solid fa-location-dot"></i> restaurant resto
+                  <i class="fa-regular fa-clock"></i> 10:00pm - 6:00am
+                </p>
                 <p>buy tickets</p>
               </div>
             </div>
@@ -234,16 +270,26 @@
                 <p>july</p>
               </div>
               <h3>Taolcance Ce poritipe at johnnie Night</h3>
-              <p><i class="fa-solid fa-location-dot"></i> restaurant resto <i class="fa-regular fa-clock"></i> 10:00pm - 6:00am  </p>
+              <p>
+                <i class="fa-solid fa-location-dot"></i> restaurant resto
+                <i class="fa-regular fa-clock"></i> 10:00pm - 6:00am
+              </p>
               <p>buy tickets</p>
             </div>
           </div>
         </div>
         <div class="perssonelle">
-          <img src="/assets/img/avatar-02.jpg" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum culpa ipsa vel ducimus at, facere eaque et ipsum delectus, deleniti nisi, tempora repudiandae architecto voluptates ea illo excepturi ad odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Id asperiores illum optio pariatur architecto eos enim eum dolor doloribus minima.</p>
+          <img src="/assets/img/avatar-02.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
+            culpa ipsa vel ducimus at, facere eaque et ipsum delectus, deleniti
+            nisi, tempora repudiandae architecto voluptates ea illo excepturi ad
+            odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+            asperiores illum optio pariatur architecto eos enim eum dolor
+            doloribus minima.
+          </p>
           <h3>Russel Stepehns</h3>
-          <h4> ceo - headpasssion</h4>
+          <h4>ceo - headpasssion</h4>
         </div>
         <div class="maps"></div>
       </section>
@@ -251,12 +297,17 @@
     <footer>
       <div class="info">
         <h4>resto</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea voluptatibus unde distinctio mollitia eum? Eligendi similique error aspernatur in repellendus sapiente architecto praesentium velit suscipit at? Rerum fuga aliquid facilis!</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+          voluptatibus unde distinctio mollitia eum? Eligendi similique error
+          aspernatur in repellendus sapiente architecto praesentium velit
+          suscipit at? Rerum fuga aliquid facilis!
+        </p>
       </div>
       <div class="newsletter">
         <div class="contact-news">
           <label for="email">newsletter</label>
-          <input type="email">
+          <input type="email" />
         </div>
         <div class="socail-footer">
           <div class="footer-left">
