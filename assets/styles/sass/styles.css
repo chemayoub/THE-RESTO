@@ -20,4 +20,110 @@
 }
 body {
   font-family: poppins;
+}
+
+header {
+  background: url(/assets/img/bg-slider-06.jpg) center/cover;
+  height: 800px;
+  color: white;
+  text-align: center;
+}
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+header nav .logo {
+  color: #CC7A00;
+  font-family: allure;
+}
+header nav .logo h2 {
+  font-size: 2.5rem;
+}
+header nav .nav {
+  width: 80%;
+  text-transform: uppercase;
+  font-family: poppins;
+  font-size: 0.9rem;
+}
+header nav .socail li {
+  padding: 0 20px;
+}
+header .header-titel {
+  margin: 170px;
+}
+header .header-titel h2 {
+  font-family: allure;
+  color: #CC7A00;
+  font-size: 3rem;
+  text-transform: capitalize;
+  margin-bottom: -15px;
+}
+header .header-titel h1 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: roboto;
+  font-weight: 400;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+header .header-titel p {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 10px 0;
+  font-weight: 100;
+}
+
+.presentation {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background: #F5F5F5;
+}
+.presentation .part-left {
+  margin: 10px;
+  border: 1px dashed #CC7A00;
+  padding: 10px;
+  text-align: center;
+}
+.presentation .part-left h2 {
+  font-family: allure;
+  color: #CC7A00;
+  text-transform: capitalize;
+}
+.presentation .part-left h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: roboto;
+  padding-bottom: 10px;
+}
+.presentation .part-left p {
+  margin: 20px 20px 40px;
+  text-align: center;
+}
+.presentation .part-left .img-avatar img {
+  border-radius: 50%;
+  width: 20%;
+}
+.presentation .part-left h4 {
+  text-transform: capitalize;
+  font-family: roboto;
+  font-weight: 400;
+  margin-bottom: -15px;
+}
+.presentation .part-right {
+  background: url(/assets/img/dish-gallery-06.jpg) center/cover;
 }/*# sourceMappingURL=styles.css.map */
